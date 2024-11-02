@@ -1,0 +1,214 @@
+div.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+div.social-media a:hover {
+    transform: scale(1.2);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+section h2 {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.gallery img {
+    border: 2px solid var(--accent-color);
+}
+
+aside {
+    background: var(--secondary-color);
+}
+
+aside ul li a:hover {
+    color: var(--accent-color);
+}
+
+footer {
+    background: var(--secondary-color);
+}
+/* Calmer and Softer Color Palette */
+:root {
+    --primary-color: #1a237e; /* Dark Blue */
+    --secondary-color: #3949ab; /* Medium Blue */
+    --accent-color: #8c9eff; /* Light Blue */
+    --background-color: #121212; /* Dark Background */
+    --text-color: #e0e0e0; /* Light Text */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header .hero h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+header .hero p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section h2 {
+    font-size: 2em;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.gallery img {
+    max-width: 100%;
+    border: 2px solid var(--accent-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+aside {
+    background: var(--secondary-color);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+aside h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+aside ul li a:hover {
+    color: var(--accent-color);
+}
+
+footer {
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer p {
+    margin: 5px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
