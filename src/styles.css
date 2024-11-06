@@ -1,5 +1,5 @@
 div.body{
-    background-color: white;
+    background-color: #222;
 }
 
 * {
@@ -11,14 +11,28 @@ div.body{
 
 body {
   margin: 0px;
+  background-color: #222;
+  overflow: scroll;
+}
+
+div.heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+h1.heading{
+    color: white;
 }
 
 .wrapper {
-  height: 100vh;
-  padding: 50px 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -27,6 +41,54 @@ body {
   height: 400px;
   padding: 20px;
   perspective: 1000px;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  z-index: 1;
+  transform-origin: center center;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 1.5s;
+}
+
+.card-content, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card-back {
+  background: #333;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto; /* Enable scrolling */
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.dimmed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  display: none;
+}
+
+.dimmed-background.active {
+  display: block;
 }
 
 .card-content {
@@ -124,18 +186,40 @@ body {
   color: rgba(0, 115, 255, 1);
 }
 
-.card2 {
-  filter: hue-rotate(45deg);
+.card1.flipped {
+  transform: translate(240%, 0%) scale(2.5) rotateY(180deg);
+  z-index: 10;
 }
 
-.card3 {
-  filter: hue-rotate(90deg);
+.card2.flipped {
+  transform: translate(130%, 0%) scale(2.5) rotateY(180deg);
+  z-index: 10;
 }
 
-.card4 {
-  filter: hue-rotate(135deg);
+.card3.flipped {
+  transform: translate(20%, 0%) scale(2.5) rotateY(180deg);
+  z-index: 10;
 }
 
-.cart5{
-    filter: hue-rotate(180deg);
+.card4.flipped {
+  transform: translate(-90%, 0%) scale(2.5) rotateY(180deg);
+  z-index: 10;
+}
+
+.card5.flipped {
+  transform: translate(-200%, 0%) scale(2.5) rotateY(180deg);
+  z-index: 10;
+}
+
+.card-back {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.card.flipped .card-content {
+  transform: rotate3d(0, 0, 0, 0);
+}
+
+.dimmed-background.active {
+  display: block;
 }
