@@ -1,104 +1,141 @@
-body{
-    display: flex;
+div.body{
+    background-color: white;
 }
 
-div.container{
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div.phone{
-    border: 7px solid black;
-    width: 500px;
-    height: 900px;
-    /* background-color: rgb(255, 255, 255); */
-    background-image: linear-gradient(rgb(183, 183, 255), rgb(96, 84, 150));
-    border-radius: 80px;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+body {
+  margin: 0px;
 }
 
-div.island{
-    margin-top: 15px;
-    width: 200px;
-    height: 40px;
-    border: 3px solid black;
-    border-radius: 50px;
-    background-color: rgb(20, 20, 20);
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.wrapper {
+  height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-div.front-cam{
-    width: 30px;
-    height: 30px;
-    background-image: linear-gradient(45deg, rgb(0, 80, 112), rgb(2, 0, 122));
-    margin-right: 25px;
-    border-radius: 50%;
+.card {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  perspective: 1000px;
 }
 
-div.apps{
-    width: 450px;
-    height:750px;
-    border-radius: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    column-gap: 20px;
+.card-content {
+  width: 100%;
+  padding-top: 100px;
+  transform-style: preserve-3d;
+  /* background: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  background: url('https://tv.bluelock-pr.com/tv2nd/wp-content/themes/bluelock-tv2nd-theme/_assets/images/fv/webp/fv_002_pc.webp');
+  background-position: center center;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
 }
 
-div.app{
-    width: 50px;
-    height: 50px;
-    margin-top: 20px;
-    border-radius: 15px;
+.card-content:hover {
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
 }
 
-div.app:nth-child(1){
-    background-image: url("images/app-store.svg");
+.card-txt {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  box-shadow: 0 20px 50px -25px rgba(0, 115, 255, 0.9);
+  border-radius: 0 0 10px 10px;
+  padding: 50px 25px 25px 25px;
+  transform-style: preserve-3d;
 }
 
-div.app:nth-child(2){
-        background-image: url("images/apple-music.svg");
+.card-title {
+  font-size: 25px;
+  font-weight: 700;
+  transform: translate3d(0, 0, 20px);
+  transition: 0.5s ease-in-out;
 }
 
-div.app:nth-child(3){
-        background-image: url("images/calculator.svg");
+.card-title:hover {
+  transform: translate3d(0, 0, 50px);
 }
 
-div.app:nth-child(4){
-        background-image: url("images/camera.svg");
+.card-desc {
+  padding: 5px 0;
+  font-size: 13px;
+  color: #999;
+  transform: translate3d(0, 0, 20px);
+  transition: 0.5s ease-in-out;
 }
 
-div.app:nth-child(5){
-        background-image: url("images/clock.svg");
+.card-desc:hover {
+  transform: translate3d(0, 0, 50px);
 }
 
-div.app:nth-child(6){
-        background-image: url("images/contacts.svg");
+.more {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 115, 255, 1);
+  padding-top: 10px;
+  transform: translate3d(0, 0, 20px);
+  transition: 0.5s ease-in-out;
 }
 
-div.app:nth-child(7){
-        background-image: url("images/files.svg");
+.more:hover {
+  transform: translate3d(0, 0, 50px);
 }
 
-div.app:nth-child(8){
-        background-image: url("images/photos.svg");
+.card-cal {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 75px;
+  left: 25px;
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 20px 60px 0 rgba(0, 115, 255, 1),
+    0 18px 36px -18px rgba(0, 115, 255, 1);
+  transform: translate3d(0, 0, 50px);
 }
 
-div.app:nth-child(9){
-        background-image: url("images/safari.svg");
+.card-cal span {
+  display: block;
+  text-align: center;
 }
 
-div.app:nth-child(10){
-        background-image: url("images/settings.svg");
+.card-cal .month {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.card-cal .date {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 115, 255, 1);
+}
+
+.card2 {
+  filter: hue-rotate(45deg);
+}
+
+.card3 {
+  filter: hue-rotate(90deg);
+}
+
+.card4 {
+  filter: hue-rotate(135deg);
+}
+
+.cart5{
+    filter: hue-rotate(180deg);
 }
