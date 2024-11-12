@@ -1,225 +1,175 @@
-div.body{
-    background-color: #222;
-}
-
-* {
-  font-family: "Space Grotesk", sans-serif;
-  margin: 0;
-  padding: 0;
+*{
   box-sizing: border-box;
 }
 
-body {
+body{
+  padding: 0px;
+  background-color: white;
+  font-family: sans-serif;
+  height: 10000px;
+  overflow-x: hidden;
   margin: 0px;
-  background-color: #222;
-  overflow: scroll;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* html.loading {
+  overflow: hidden;
+}
+
+body.loading {
+  overflow-y: scroll;
+} */
 
 div.heading{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 200px;
 }
 
-h1.heading{
-    color: white;
-}
-
-.wrapper {
+div.navigation-container{
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-evenly;
+  align-items:center;
+  width: 80%;
+  height: 60px;
+  position: sticky;
+  top: 10px;
+  background-color: white;
+
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 089);
+
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  border-radius: 20px;
+  flex: 1, 1, 0;
+  z-index: 999;
 }
 
-.card {
-  width: 300px;
-  height: 400px;
-  padding: 20px;
-  perspective: 1000px;
-  position: relative;
-  cursor: pointer;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-  z-index: 1;
-  transform-origin: center center;
-}
-
-.card {
-  position: relative;
-  cursor: pointer;
-  transform-style: preserve-3d;
-  transition: transform 1.5s;
-}
-
-.card-content, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-}
-
-.card-back {
-  background: #333;
+button.navigation{
+  width: 110px;
+  height: 35px;
+  border: 0 solid white;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: rgb(0, 119, 237);
   color: white;
-  transform: rotateY(180deg);
-  padding: 20px;
-  box-sizing: border-box;
-  overflow: auto; /* Enable scrolling */
-  border-radius: 10px;
-  height: 100%;
+}
+
+button.navigation:hover{
+  background-color: rgb(0, 100, 201);
+  cursor: pointer;
+}
+
+button.navigation:active{
+  background-color: rgb(0, 81, 161);
+  cursor: pointer;
+}
+
+/* Content Start*/
+
+/* General Start */
+
+h1.c-heading{
+  font-size: 56px;
+}
+
+div.body{
   width: 100%;
 }
 
-.dimmed-background {
+div.section{
+  padding-top: 60px;
+}
+
+div.deck{
+  background-color: blue;
+  width: 1500px;
+  height: 650px;
+  position: relative;
+  left: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+div.card{
+  background-color: white;
+  width: 430px;
+  height: 630px;
+  margin: 5px;
+  border-radius: 30px;
+}
+
+div.move-buttons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  gap: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+button.move-buttons{
+  background: white;
+  color: black;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+/* General End */
+
+/* Content End */
+
+/* Loading Page Start */
+
+div.loading-page{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 5;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, rgb(230, 230, 230), rgb(255, 255, 255), rgb(230, 230, 230));
+  z-index: 9999;
 }
 
-.dimmed-background.active {
-  display: block;
-}
-
-.card-content {
-  width: 100%;
-  padding-top: 100px;
-  transform-style: preserve-3d;
-  /* background: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
-  background: url('https://tv.bluelock-pr.com/tv2nd/wp-content/themes/bluelock-tv2nd-theme/_assets/images/fv/webp/fv_002_pc.webp');
-  background-position: center center;
-  border-radius: 10px;
-  transition: 0.5s ease-in-out;
-}
-
-.card-content:hover {
-  background-position: 80% 20%;
-  transform: rotate3d(0.5, 1, 0, 30deg);
-}
-
-.card-txt {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  box-shadow: 0 20px 50px -25px rgba(0, 115, 255, 0.9);
-  border-radius: 0 0 10px 10px;
-  padding: 50px 25px 25px 25px;
-  transform-style: preserve-3d;
-}
-
-.card-title {
-  font-size: 25px;
-  font-weight: 700;
-  transform: translate3d(0, 0, 20px);
-  transition: 0.5s ease-in-out;
-}
-
-.card-title:hover {
-  transform: translate3d(0, 0, 50px);
-}
-
-.card-desc {
-  padding: 5px 0;
-  font-size: 13px;
-  color: #999;
-  transform: translate3d(0, 0, 20px);
-  transition: 0.5s ease-in-out;
-}
-
-.card-desc:hover {
-  transform: translate3d(0, 0, 50px);
-}
-
-.more {
-  display: block;
-  font-size: 12px;
-  font-weight: 500;
-  color: rgba(0, 115, 255, 1);
-  padding-top: 10px;
-  transform: translate3d(0, 0, 20px);
-  transition: 0.5s ease-in-out;
-}
-
-.more:hover {
-  transform: translate3d(0, 0, 50px);
-}
-
-.card-cal {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 75px;
-  left: 25px;
-  background: #222;
-  color: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 20px 60px 0 rgba(0, 115, 255, 1),
-    0 18px 36px -18px rgba(0, 115, 255, 1);
-  transform: translate3d(0, 0, 50px);
-}
-
-.card-cal span {
-  display: block;
-  text-align: center;
-}
-
-.card-cal .month {
-  font-size: 11px;
-  font-weight: 500;
-}
-
-.card-cal .date {
+div.logo-name{
+  color: black;
   font-size: 20px;
-  font-weight: 700;
-  color: rgba(0, 115, 255, 1);
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 10px;
 }
 
-.card1.flipped {
-  transform: translate(240%, 0%) scale(2.5) rotateY(180deg);
-  z-index: 10;
+@keyframes draw{
+  0%{
+    stroke-dashoffset: 4500;
+  }
+
+  100%{
+    stroke-dashoffset: 0;
+  }
 }
 
-.card2.flipped {
-  transform: translate(130%, 0%) scale(2.5) rotateY(180deg);
-  z-index: 10;
+#svg{
+  height: 150px;
+  width: 150px;
+  stroke: black;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+  font-family: "Michroma", "Space Grotesk",sans-serif;
 }
 
-.card3.flipped {
-  transform: translate(20%, 0%) scale(2.5) rotateY(180deg);
-  z-index: 10;
-}
-
-.card4.flipped {
-  transform: translate(-90%, 0%) scale(2.5) rotateY(180deg);
-  z-index: 10;
-}
-
-.card5.flipped {
-  transform: translate(-200%, 0%) scale(2.5) rotateY(180deg);
-  z-index: 10;
-}
-
-.card-back {
-  overflow-y: auto;
-  height: 100%;
-}
-
-.card.flipped .card-content {
-  transform: rotate3d(0, 0, 0, 0);
-}
-
-.dimmed-background.active {
-  display: block;
-}
+/* Loading Page END */
