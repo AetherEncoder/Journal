@@ -15,20 +15,93 @@ gsap.fromTo(
 
 // Add event listener to the "HELLO" button
 document.getElementById('move-button-right-classroom').addEventListener('click', function() {
-  gsap.to('.classroom', { x: '-=400', duration: 1 });
+  const button = this;
+  button.disabled = true;
+  gsap.to('.deck.classroom', { x: '-=400', duration: 1 });
+  setTimeout(() => {
+    button.disabled = false;
+  }, 1000);
 });
 
 document.getElementById('move-button-left-classroom').addEventListener('click', function() {
-  gsap.to('.classroom', { x: '+=400', duration: 1 });
+  const button = this;
+  button.disabled = true;
+  gsap.to('.deck.classroom', { x: '+=400', duration: 1 });
+  setTimeout(() => {
+    button.disabled = false;
+  }, 1000);
 });
 
-
 document.getElementById('move-button-right-church').addEventListener('click', function() {
-  gsap.to('.church', { x: '-=400', duration: 1 });
+  const button = this;
+  button.disabled = true;
+  gsap.to('.deck.church', { x: '-=400', duration: 1 });
+  setTimeout(() => {
+    button.disabled = false;
+  }, 1000);
 });
 
 document.getElementById('move-button-left-church').addEventListener('click', function() {
-  gsap.to('.church', { x: '+=400', duration: 1 });
+  const button = this;
+  button.disabled = true;
+  gsap.to('.deck.church', { x: '+=400', duration: 1 });
+  setTimeout(() => {
+    button.disabled = false;
+  }, 1000);
+});
+
+document.getElementById('move-button-right-culture').addEventListener('click', function() {
+  const button = this;
+  button.disabled = true;
+  gsap.to('.deck.culture', { x: '-=400', duration: 1 });
+  setTimeout(() => {
+    button.disabled = false;
+  }, 1000);
+});
+
+document.getElementById('move-button-left-culture').addEventListener('click', function() {
+  const button = this;
+  button.disabled = true;
+  gsap.to('.deck.culture', { x: '+=400', duration: 1 });
+  setTimeout(() => {
+    button.disabled = false;
+  }, 1000);
+});
+
+document.getElementById('move-button-right-community').addEventListener('click', function() {
+  const button = this;
+  button.disabled = true;
+  gsap.to('.deck.community', { x: '-=400', duration: 1 });
+  setTimeout(() => {
+    button.disabled = false;
+  }, 1000);
+});
+
+document.getElementById('move-button-left-community').addEventListener('click', function() {
+  const button = this;
+  button.disabled = true;
+  gsap.to('.deck.community', { x: '+=400', duration: 1 });
+  setTimeout(() => {
+    button.disabled = false;
+  }, 1000);
+});
+
+document.getElementById('move-button-right-court').addEventListener('click', function() {
+  const button = this;
+  button.disabled = true;
+  gsap.to('.deck.court', { x: '-=400', duration: 1 });
+  setTimeout(() => {
+    button.disabled = false;
+  }, 1000);
+});
+
+document.getElementById('move-button-left-court').addEventListener('click', function() {
+  const button = this;
+  button.disabled = true;
+  gsap.to('.deck.court', { x: '+=400', duration: 1 });
+  setTimeout(() => {
+    button.disabled = false;
+  }, 1000);
 });
 
 document.querySelectorAll('.navigation-container a').forEach(link => {
