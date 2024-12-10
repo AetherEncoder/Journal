@@ -15,93 +15,50 @@ gsap.fromTo(
 
 // Add event listener to the "HELLO" button
 document.getElementById('move-button-right-classroom').addEventListener('click', function() {
-  const button = this;
-  button.disabled = true;
-  gsap.to('.deck.classroom', { x: '-=400', duration: 1 });
-  setTimeout(() => {
-    button.disabled = false;
-  }, 1000);
+  gsap.to('.classroom', { x: '-=460', duration: 1 });
 });
 
 document.getElementById('move-button-left-classroom').addEventListener('click', function() {
-  const button = this;
-  button.disabled = true;
-  gsap.to('.deck.classroom', { x: '+=400', duration: 1 });
-  setTimeout(() => {
-    button.disabled = false;
-  }, 1000);
+  gsap.to('.classroom', { x: '+=460', duration: 1 });
 });
 
+
 document.getElementById('move-button-right-church').addEventListener('click', function() {
-  const button = this;
-  button.disabled = true;
-  gsap.to('.deck.church', { x: '-=400', duration: 1 });
-  setTimeout(() => {
-    button.disabled = false;
-  }, 1000);
+  gsap.to('.church', { x: '-=460', duration: 1 });
 });
 
 document.getElementById('move-button-left-church').addEventListener('click', function() {
-  const button = this;
-  button.disabled = true;
-  gsap.to('.deck.church', { x: '+=400', duration: 1 });
-  setTimeout(() => {
-    button.disabled = false;
-  }, 1000);
+  gsap.to('.church', { x: '+=460', duration: 1 });
 });
 
+
 document.getElementById('move-button-right-culture').addEventListener('click', function() {
-  const button = this;
-  button.disabled = true;
-  gsap.to('.deck.culture', { x: '-=400', duration: 1 });
-  setTimeout(() => {
-    button.disabled = false;
-  }, 1000);
+  gsap.to('.culture', { x: '-=460', duration: 1 });
 });
 
 document.getElementById('move-button-left-culture').addEventListener('click', function() {
-  const button = this;
-  button.disabled = true;
-  gsap.to('.deck.culture', { x: '+=400', duration: 1 });
-  setTimeout(() => {
-    button.disabled = false;
-  }, 1000);
+  gsap.to('.culture', { x: '+=460', duration: 1 });
 });
 
+
+
 document.getElementById('move-button-right-community').addEventListener('click', function() {
-  const button = this;
-  button.disabled = true;
-  gsap.to('.deck.community', { x: '-=400', duration: 1 });
-  setTimeout(() => {
-    button.disabled = false;
-  }, 1000);
+  gsap.to('.community', { x: '-=460', duration: 1 });
 });
 
 document.getElementById('move-button-left-community').addEventListener('click', function() {
-  const button = this;
-  button.disabled = true;
-  gsap.to('.deck.community', { x: '+=400', duration: 1 });
-  setTimeout(() => {
-    button.disabled = false;
-  }, 1000);
+  gsap.to('.community', { x: '+=460', duration: 1 });
 });
 
+
+
+
 document.getElementById('move-button-right-court').addEventListener('click', function() {
-  const button = this;
-  button.disabled = true;
-  gsap.to('.deck.court', { x: '-=400', duration: 1 });
-  setTimeout(() => {
-    button.disabled = false;
-  }, 1000);
+  gsap.to('.court', { x: '-=460', duration: 1 });
 });
 
 document.getElementById('move-button-left-court').addEventListener('click', function() {
-  const button = this;
-  button.disabled = true;
-  gsap.to('.deck.court', { x: '+=400', duration: 1 });
-  setTimeout(() => {
-    button.disabled = false;
-  }, 1000);
+  gsap.to('.court', { x: '+=460', duration: 1 });
 });
 
 document.querySelectorAll('.navigation-container a').forEach(link => {
