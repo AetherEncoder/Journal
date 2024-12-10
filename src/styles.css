@@ -94,9 +94,9 @@ div.deck{
   /* width: 1500px; */
   height: 650px;
   position: relative;
-  left: 700px;
+  left: 200px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
@@ -387,3 +387,184 @@ div.classroomcover6{
   background-size: cover;
   background-position: center;
 }
+
+div.churchcover1{
+  background-image: url('images/churchcover1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.churchcover2{
+  background-image: url('images/churchcover2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.churchcover3{
+  background-image: url('images/churchcover3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.churchcover4{
+  background-image: url('images/churchcover4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.churchcover5{
+  background-image: url('images/churchcover5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.churchcover6{
+  background-image: url('images/churchcover6.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.churchcover7{
+  background-image: url('images/churchcover7.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.churchcover8{
+  background-image: url('images/churchcover8.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.culturecover1{
+  background-image: url('images/culturecover1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.culturecover2{
+  background-image: url('images/culturecover2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.culturecover3{
+  background-image: url('images/culturecover3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.culturecover4{
+  background-image: url('images/culturecover4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.culturecover5{
+  background-image: url('images/culturecover5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.culturecover6{
+  background-image: url('images/culturecover6.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.culturecover7{
+  background-image: url('images/culturecover7.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.culturecover8{
+  background-image: url('images/culturecover8.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.culturecover9{
+  background-image: url('images/culturecover9.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.communitycover1{
+  background-image: url('images/communitycover1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.communitycover2{
+  background-image: url('images/communitycover2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.communitycover3{
+  background-image: url('images/communitycover3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.communitycover4{
+  background-image: url('images/communitycover4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.communitycover5{
+  background-image: url('images/communitycover5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.courtcover1{
+  background-image: url('images/courtcover1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.courtcover2{
+  background-image: url('images/courtcover2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.courtcover3{
+  background-image: url('images/courtcover3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.courtcover4{
+  background-image: url('images/courtcover4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.courtcover5{
+  background-image: url('images/courtcover5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.courtcover6{
+  background-image: url('images/courtcover6.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.courtcover7{
+  background-image: url('images/courtcover7.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.courtcover8{
+  background-image: url('images/courtcover8.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
