@@ -93,6 +93,7 @@ button.navigation{
   background-color: white;
   color: rgb(65,65,65);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7);
+  transition: 0.2s ease;
 }
 
 button.navigation:hover{
@@ -105,6 +106,7 @@ button.navigation:active{
   background-color: rgb(44,44,44);
   color: white;
   cursor: pointer;
+  transform: scale(0.9);
 }
 
 div.top-container{
@@ -131,6 +133,7 @@ button.top{
   border: 1px solid rgb(65, 65, 65);
   color: rgb(65,65,65);
   transition: background-color 0.3s ease, color 0.3s ease;
+  transition: 0.2s ease;
   font-size: 20px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
@@ -139,6 +142,13 @@ button.top:hover{
   background-color: rgb(65,65,65);
   color: white;
   cursor: pointer;
+}
+
+button.top:active{
+  background-color: rgb(44,44,44);
+  color: white;
+  cursor: pointer;
+  transform: scale(0.9);
 }
 
 /* Content Start*/
@@ -189,6 +199,7 @@ div.plus{
   align-items: center;
 
   transition: background-color 0.3s ease, color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 div.plus:hover{
@@ -199,6 +210,7 @@ div.plus:hover{
 div.plus:active{
   background-color: rgb(34, 34, 34);
   cursor: pointer;
+  transform: scale(0.9);
 }
 
 svg.plus{
@@ -270,6 +282,7 @@ button.move-buttons{
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  transition: 0.2s ease;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
@@ -279,6 +292,7 @@ button.move-buttons:hover{
 
 button.move-buttons:active{
   background-color: rgb(180, 180, 180);
+  transform: scale(0.9);
 }
 
 /* General End */
@@ -385,6 +399,7 @@ button.modal-close-button{
   cursor: pointer;
   font-weight: bold;
 
+  transition: 0.2s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -394,6 +409,7 @@ button.modal-close-button:hover{
 
 button.modal-close-button:active{
   background-color: rgb(150, 150, 150);
+  transform: scale(0.9);
 }
 
 button.open-modal{
