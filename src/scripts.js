@@ -139,3 +139,9 @@ closeButtons.forEach(button => {
     document.body.classList.remove("modal-open");
   });
 });
+
+window.addEventListener('scroll', () => {
+  if (window.scrollX !== 0) {
+    window.scrollTo(0, window.scrollY); 
+  }
+});
