@@ -432,6 +432,21 @@ div.proof-container, div.reflection{
   height: 100%;
 }
 
+button.restrict{
+  background: none;
+  border: none;
+  font-size: 1em;
+}
+
+p.restrict{
+  text-align: justify;
+}
+
+h1.restrict{
+  text-align: left;
+  font-size: 32px;
+}
+
 div.proof-container{
   display: flex;
   justify-content: center;
