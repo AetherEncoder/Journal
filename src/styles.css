@@ -95,6 +95,7 @@ div.navigation-container{
   margin-top: 10px;
   border-radius: 20px;
   flex: 1, 1, 0;
+
 }
 
 button.navigation{
@@ -495,6 +496,7 @@ div.footer{
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 60px;
+  color: rgb(65, 65, 65);
 }
 
 hr.footer{
@@ -540,6 +542,12 @@ div.classroomcover5{
 
 div.classroomcover6{
   background-image: url('images/classroomcover6.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+div.classroomcover7{
+  background-image: url('images/classroomcover7.jpg');
   background-size: cover;
   background-position: center;
 }
